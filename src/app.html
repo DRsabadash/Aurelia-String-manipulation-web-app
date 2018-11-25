@@ -1,0 +1,13 @@
+﻿<!DOCTYPE html>
+<template>
+    <h1>${heading}</h1>
+        <input type="text", keyup.trigger="manipulateString($event)" value.bind="baseString">
+      </form>
+    <ul  id="stringList",>
+        <li repeat.for="modifiedString of moddedStrings">
+            <span>
+                ${modifiedString.newString}
+            </span>
+        </li>
+    </ul>
+</template>
